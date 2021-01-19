@@ -165,8 +165,9 @@ class TestBaseballGame(unittest.TestCase):
                             "Strikes".upper(), console[i + 2].upper())
                         self.assertIn(
                             "Balls".upper(), console[i + 2].upper())
-
+                
                 target_number = random_number[1]
+                
                 for i in range(900, len(input_list)):
                     if input_list[i].isdigit():
                         if int(input_list[i]) < int(target_number):
@@ -231,3 +232,6 @@ class TestBaseballGame(unittest.TestCase):
                     ball += 1
         result = [strikes, ball]
         return result
+
+if __name__ == "__main__":
+    unittest.main()
